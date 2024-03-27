@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection</title>
+    <link rel="stylesheet" href="./style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+   <link rel="icon" href="https://avatars.githubusercontent.com/u/157777529?s=400&u=42374f440ace4aa8d1c853b778842a1d17728869&v=4">
+
+   <style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+    * {box-sizing: border-box;}
+    .main{
+        height: 40%;
+        width: 50%;
+        display: flex;
+        /* justify-content: center; */
+        /* align-items: center; */
+        flex-wrap: wrap;
+        text-align: center;
+        position: relative;
+        left: 300px;
+        top: 10px;
+        margin-bottom: 20px;
+    }
+    
+    input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+    
+    input[type=submit] {
+      background-color: #04AA6D;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+      background-color:black;
+    }
+    
+    .container {
+      border-radius: 5px;
+      background-color: olive;
+      padding: 20px;
+    }
+    #fname ,input{
+        text-align: center;
+
+        ::-webkit-input-placeholder{
+            text-align: center;
+        }
+        :-moz-placeholder{
+            text-align: center;
+        }
+    }
+    </style>
+   
+</head>
+<body>
+    
+    <!-- Navabar -->
+    <nav class="navbar"> 
+        <h1>AlphA</h1>
+        <div class="navbar-links">
+            <p class="navbar-link"><a href="./Index.html">Home</a></p>
+            <p class="navbar-link"><a href="./Collection.html">Collection</a></p>
+            <p class="navbar-link"><a href="./Contect.html">Contect</a></p>
+        </div>
+
+        <div class="navbar-menu-toggle" onclick="ShowNavbar()">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+    </nav>
+                <!-- Contect Form -->
+
+               
+                <h1 style="margin-bottom: 10px; margin-top: 30px; text-align: center; display: flex; justify-content: center;align-items: center;">Contact Us</h1>
+                    <div class="main">
+                    
+                    
+                    <div class="container">
+                      <form action="/action_page.php">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    
+                        <label for="country">Country</label>
+                        <select id="country" name="country">
+                          <option value="australia">India</option>
+                          <option value="canada">Canada</option>
+                          <option value="usa">USA</option>
+                        </select>
+                    
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Give Details Here" style="height:200px"></textarea>
+                    
+                        <input type="submit" value="Submit">
+                      </form>
+                    </div>
+                </div>
+
+       
+                <!-- FOOTER -->
+
+        <div class="footer">
+            <div class="footer-cont">
+                <div class="footer-box1">
+                    <h2 class="footing-txt">AlphA</h2>
+                    <p id="lastp">நம்பி வாங்க சந்தோசமா போங்க😀</p>
+                    <div class="icon-cont">
+                        <i class="fa-brands fa-instagram" style="color: white;"></i>
+                        <i class="fa-brands fa-twitter" style="color: white;"></i>
+                        <i class="fa-brands fa-facebook" style="color: white;"></i>
+                        <i class="fa-brands fa-whatsapp" style="color: white;"></i>
+                    </div>
+                </div>
+            </div>
+            <p id="last">@2024 AlphA.com</p>
+            
+        </div>
+        
+
+    <script src="./collection.js"></script>
+</body>
+</html>
